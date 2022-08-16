@@ -66,7 +66,7 @@ main ="number of times a referee has appeared in different games.")
 engpremleg <-engpreleg1 %>% group_by(Referee) %>% summarise(appearance = n())
 rf<- engpremleg$Referee        # rf stands for referee
 ra<- engpremleg$appearance     #ra stands for number of appearance
-#plotting a bar graph of referee against the number of appearance.
+#plotting a bar graph of referee against the number of appearance.fyuxy
 barplot(ra, names.arg = rf, xlab ="Referee", ylim = c(0, 20),
 ylab ="appearance", col ="green",
 main ="number of times a referee has appeared in different games.")
